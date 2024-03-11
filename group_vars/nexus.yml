@@ -1,0 +1,4 @@
+---
+conf_path: "{{ app_path }}/nexus"
+data_path: "{{ app_path }}/sonatype-work/nexus3"
+default_pass: "{{ data_path }}/admin.password"

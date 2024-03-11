@@ -1,0 +1,16 @@
+---
+- name: Check hosts
+  hosts: nxt.localdomain
+  tasks:
+- name: Ensure SELinux is set to enforcing mode
+  ansible.builtin.lineinfile:
+    path: /etc/selinux/config
+    regexp: '^SELINUX='
+    line: SELINUX=enforcing
+  
+  
+  
+  
+  
+  # roles:
+  #   - check_os

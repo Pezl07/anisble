@@ -1,0 +1,10 @@
+---
+- name: Run Test script
+  ansible.builtin.script: check_os.sh
+  register: result
+
+- debug:
+    var: result.stdout_lines
+
+- debug:
+    var: task_name
