@@ -2,8 +2,7 @@
 - name: Check hosts
   hosts: localhost
   vars:
-    server:
-      "{{ structure_vars }}"
+    server: {{ structure_vars }}
   tasks:
   - name: Print a var
     debug:
