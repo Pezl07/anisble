@@ -3,7 +3,7 @@
   hosts: localhost
   vars:
     server: "{{ structure_vars }}"
-  tasks:  
+  tasks:    
   - name: Print a var
     debug:
       var: server
