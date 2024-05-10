@@ -4,8 +4,10 @@
   vars:
     server: "{{ structure_vars }}"
   tasks:    
+  - set_fact:
+     server1: '{{ server | from_yaml }}'
   - name: Print a var
     debug:
-      msg: "{{ server[0].Unit }}"
+      msg: "{{ server1[0].Unit }}"
   
     
