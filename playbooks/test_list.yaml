@@ -7,9 +7,7 @@
         no: 0284
       supakkavee:
         no: 2085
-
     admin: kittipod
-  
   tasks:
   - name: Print a var
     debug:
