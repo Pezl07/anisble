@@ -4,13 +4,14 @@
   vars:
     peoples:
       kittipod:
-        no: 0284
+        no_emp: 0284
       supakkavee:
-        no: 2085
+        no_emp: 2085
     admin: kittipod
+    
   tasks:
   - name: Print a var
     debug:
-      msg: "{{ peoples[admin]['no'] }}"
+      msg: "{{ peoples[admin]['no_emp'] }}"
   
     
