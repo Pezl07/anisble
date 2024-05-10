@@ -2,10 +2,10 @@
 - name: Check hosts
   hosts: localhost
   vars:
-    server: {{ structure_vars }}
-  tasks:
+    server: "{{ structure_vars }}"
+  tasks:  
   - name: Print a var
     debug:
-      msg: "{{ peoples['kittipod']['ip_a'] }}"
+      var: server
   
     
