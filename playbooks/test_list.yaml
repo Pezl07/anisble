@@ -6,6 +6,6 @@
   tasks:    
   - name: Print a var
     debug:
-      var: server
+      msg: server[0].Unit
   
     
