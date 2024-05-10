@@ -6,6 +6,6 @@
   tasks:    
   - name: Print a var
     debug:
-      msg: server[0].Unit
+      msg: "{{ server[0].Unit }}"
   
     
