@@ -8,7 +8,7 @@
      server1: '{{ server | from_yaml }}'
   - name: Print a var
     debug:
-      msg: "{{ item.Unit }}"
+      msg: "Name : {{ item.Unit }}, Size: {{ item.Size }}"
     loop: "{{ server1 }}"
   
     
